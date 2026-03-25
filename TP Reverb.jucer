@@ -28,6 +28,8 @@
           <FILE id="rhBHBX" name="poly_values.h" compile="0" resource="0" file="Source/synthesis/framework/poly_values.h"/>
           <FILE id="C04mYy" name="processor.cpp" compile="1" resource="0" file="Source/synthesis/framework/processor.cpp"/>
           <FILE id="WoKXVy" name="processor.h" compile="0" resource="0" file="Source/synthesis/framework/processor.h"/>
+          <FILE id="mMrNNf" name="processor_router.cpp" compile="1" resource="0"
+                file="Source/synthesis/framework/processor_router.cpp"/>
           <FILE id="cBbcws" name="processor_router.h" compile="0" resource="0"
                 file="Source/synthesis/framework/processor_router.h"/>
           <FILE id="dE0csN" name="utils.cpp" compile="1" resource="0" file="Source/synthesis/framework/utils.cpp"/>
