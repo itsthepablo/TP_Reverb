@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="hX5RLM" name="TP Reverb" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="UIx1w3" name="TP Reverb">
+    <GROUP id="{620250B1-2FFC-6880-FD60-E7BACC5686C3}" name="Source">
+      <GROUP id="{A3818C41-56D2-A69E-BE3F-34FD7586F113}" name="common">
+        <FILE id="zJrY8E" name="synth_constants.h" compile="0" resource="0"
+              file="Source/common/synth_constants.h"/>
+      </GROUP>
+      <GROUP id="{ED959F1F-73A2-097D-852F-DBBD00ED89FD}" name="synthesis">
+        <GROUP id="{677D1206-2390-5B19-F07D-0C12AF95BA1D}" name="effects">
+          <FILE id="fVMK8h" name="reverb.cpp" compile="1" resource="0" file="Source/synthesis/effects/reverb.cpp"/>
+          <FILE id="k5Z4vF" name="reverb.h" compile="0" resource="0" file="Source/synthesis/effects/reverb.h"/>
+        </GROUP>
+        <GROUP id="{ABA64A6F-6421-1A54-2C98-D008EB771778}" name="filters">
+          <FILE id="aqrOp0" name="one_pole_filter.h" compile="0" resource="0"
+                file="Source/synthesis/filters/one_pole_filter.h"/>
+        </GROUP>
+        <GROUP id="{F3F33E04-310D-E193-A9F5-526C7D91D4B8}" name="framework">
+          <FILE id="eDYAeh" name="circular_queue.h" compile="0" resource="0"
+                file="Source/synthesis/framework/circular_queue.h"/>
+          <FILE id="uMuITc" name="common.h" compile="0" resource="0" file="Source/synthesis/framework/common.h"/>
+          <FILE id="PRlyt3" name="feedback.h" compile="0" resource="0" file="Source/synthesis/framework/feedback.h"/>
+          <FILE id="SSsh0c" name="futils.h" compile="0" resource="0" file="Source/synthesis/framework/futils.h"/>
+          <FILE id="yrJ5vw" name="matrix.h" compile="0" resource="0" file="Source/synthesis/framework/matrix.h"/>
+          <FILE id="WR2GYe" name="poly_utils.h" compile="0" resource="0" file="Source/synthesis/framework/poly_utils.h"/>
+          <FILE id="rhBHBX" name="poly_values.h" compile="0" resource="0" file="Source/synthesis/framework/poly_values.h"/>
+          <FILE id="C04mYy" name="processor.cpp" compile="1" resource="0" file="Source/synthesis/framework/processor.cpp"/>
+          <FILE id="WoKXVy" name="processor.h" compile="0" resource="0" file="Source/synthesis/framework/processor.h"/>
+          <FILE id="cBbcws" name="processor_router.h" compile="0" resource="0"
+                file="Source/synthesis/framework/processor_router.h"/>
+          <FILE id="dE0csN" name="utils.cpp" compile="1" resource="0" file="Source/synthesis/framework/utils.cpp"/>
+          <FILE id="J5CIjb" name="utils.h" compile="0" resource="0" file="Source/synthesis/framework/utils.h"/>
+          <FILE id="wyof4V" name="value.cpp" compile="1" resource="0" file="Source/synthesis/framework/value.cpp"/>
+          <FILE id="n4u6Sc" name="value.h" compile="0" resource="0" file="Source/synthesis/framework/value.h"/>
+        </GROUP>
+        <GROUP id="{89CDAD4A-5E4E-58EC-3CBA-DB84F061B765}" name="lookups">
+          <FILE id="LFTJmx" name="memory.h" compile="0" resource="0" file="Source/synthesis/lookups/memory.h"/>
+        </GROUP>
+      </GROUP>
+      <FILE id="HS2sMW" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="DXUvRD" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="TP Reverb" headerPath="C:\Users\pablo\Desktop\JUCE\modules\juce_audio_processors\format_types\VST3_SDK&#10;&#10;Source/synthesis/framework;Source/synthesis/filters;Source/synthesis/effects"
+                       enablePluginBinaryCopyStep="1" vst3BinaryLocation_x64="C:\Program Files\Common Files\VST3"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="TP Reverb" headerPath="C:\Users\pablo\Desktop\JUCE\modules\juce_audio_processors\format_types\VST3_SDK&#10;&#10;Source/synthesis/framework;Source/synthesis/filters;Source/synthesis/effects"
+                       enablePluginBinaryCopyStep="1" vst3BinaryLocation_x64="C:\Program Files\Common Files\VST3"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/pablo/Desktop/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
